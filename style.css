@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    padding: 16px 0;
+}
+.container-fluid {
+    padding: 0 64px;
+    margin: auto;
+}
+
+.inner-wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container-fluid .inner-wraper nav {
+    display: flex;
+    gap: 20px;
+}
+
+.cta-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    transition: 0.2s;
+}
+
+.cta-button:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
