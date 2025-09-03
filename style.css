@@ -25,6 +25,11 @@ header {
     margin: auto;
 }
 
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
 .inner-wraper {
     display: flex;
     justify-content: space-between;
@@ -43,7 +48,68 @@ header .container-fluid .inner-wraper nav {
     transition: 0.2s;
 }
 
-.cta-button:hover {
+.cta-button:hover, .cta-button-outline:hover {
     text-decoration: none;
     opacity: 0.7;
+}
+
+.cta-button-outline {
+    padding: 10px 20px;
+    color: white;
+    border: 1px solid white;
+    max-width: 200px;
+    margin: auto;
+}
+
+.hero {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    color: white;
+    position: relative;
+    font-size: x-large;
+}
+
+.hero .hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+    border: 1px solid red;
+}
+
+.hero::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+
+.services {
+    text-align: center;
+    padding: 112px 0;
+}
+
+.services .inner-services {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: gray;
+    padding: 10px;
+}
+
+.service-box img {
+    margin: auto;
 }
