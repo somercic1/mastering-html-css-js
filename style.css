@@ -249,6 +249,34 @@ header .container-fluid .inner-wraper nav {
     font-weight: 600;
 }
 
+footer {
+    padding: 50px 0;
+}
+
+footer .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer .footer-wrapper .footer-first-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-wrapper .footer-first-row .footer-nav {
+    display: flex;
+    gap: 20px;
+}
+
+footer .footer-wrapper .footer-second-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-top: 2px solid gray;
+    padding-top: 20px;
+}
+
 @media (max-width: 991px) {
     .container-fluid {
         padding: 0 10px;
